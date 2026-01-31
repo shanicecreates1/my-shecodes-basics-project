@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I LOVE MUSIC</title>
+  </head>
+  <style>
+
+        h1{transition:all 200ms ease-in-out;}
+        h1:hover{color:rgb(235, 226, 198);
+        }
+            h1 {
+            font-family:Georgia, 'Times New Roman', Times, serif;
+            color:bisque
+             border-radius: 10px;
+             text-align:center;
+             text-transform:backdrop;
+             padding:15px;
+             background:olive;
+}
+
+             img {
+            display: block;
+            margin: 20px auto;
+            max-width: 100%;
+            border-radius: 10px;
+          }
+
+             h2 {
+               text-align: center;
+               color:aliceblue;
+               border: 1px solid ;
+               padding: 15px;
+               font-size: 18px;
+               border-radius: 10px;
+               border-color: bisque;
+               font-family:Georgia, 'Times New Roman', Times, serif
+             }
+             li {list-style-type: disc;
+            color:aquamarine;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        button {
+            display: block;
+            margin: 30px auto;
+            background-color: rgb(239, 243, 10);
+            font-size: 18px;
+            border-radius: 15px;
+            padding: 15px 30px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            transition: all 200ms ease-in-out;
+
+
+    }
+    button:hover{cursor:pointer
+     ;
+    }
+    .container{
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px 60px;
+    background-image: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    border-radius: 5px;
+    border: 2px solid white;
+    }
+    .get-recs {
+        color: #0cee32;
+        text-decoration: none;
+        font-size: 12px;
+        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        text-align:right; 
+
+      }
+    .get-recs:hover {
+        text-decoration:wavy;
+      }
+
+      .footer {
+        text-align: center;
+        color:aliceblue;
+      }
+  </style>
+  <body>
+    <div class="container">
+      <h1>I LOVE MUSIC𝄞⨾🎧ྀི🥁😎!</h1>
+      <h2>
+        <em
+          ><strong>
+            HERE ARE SOME SCIENTIFIC FACTS ABOUT WHY YOU SHOULD LISTEN TO MUSIC:
+          </strong></em
+        >
+      </h2>
+      <ul type="circle">
+        <li>
+          It reduces stress and anxiety : listening to music can lower blood
+          pressure, decrease stress hormones, and create a sense of calm.
+        </li>
+        <li>
+          Music increases creativity: Ambient, lyric-free music at a moderate
+          volume has been shown to improve creative processes in people.
+        </li>
+        <li>
+          It improves memory: Music can help recall long-forgotten memories and
+          is used in therapy to help patients with memory loss.
+        </li>
+      </ul>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/177/728/original/Music_collage_shecodes.png?1769683545"
+        alt="personalized spotify music collage"
+      />
+      <p></p>
+      <a href=https://en.wikipedia.org/wiki/Badvillain
+        target="_blank"
+        class="get-recs">
+        Find out more about one of my favourite artists here🎛️🎵🎙️🥁✨✨
+        </a>
+      <button class ="listen-button">LISTEN TO SOME MUSIC𝄞</button>
+    <p class="footer">
+        This page was built by
+        <a href= "https://www.instagram.com/shanicethewitness/" target="_blank"> Shanice Hill </a>
+    </p>
+    </div>
+   <script>
+    function listen() {
+        let name = prompt("What is your name?");
+        let music = prompt("Do you listen to music often?☺️");
+        let emoji = prompt("What is your favorite emoji?");
+        music = music.toLowerCase().trim(); // Assigning the result back to music
+        if (music === "yes") { // Changed 'listen' to 'music' for correct comparison
+            alert("You are so cool! " + emoji);
+        } else {
+            alert("You should try listening to some music💜✨");
+        }
+    }
+
+    let listenButton = document.querySelector(".listen-button");
+    listenButton.addEventListener("click", listen);
+</script>
+  </body>
+</html>
